@@ -1,2 +1,60 @@
-#asdsajdi
-asdsadasdsd
+body{
+    background-color: #f2f3f4;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    color: #28282B;
+}
+
+#name{
+margin-left: 5%; /*Check back on this after I load actual pics to see how the spacing feels */
+padding: 0;
+font-family: 'Bebas Neue', cursive;
+font-size: 20px;
+letter-spacing: 1px;
+}
+
+#name:hover{
+    cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  margin-right: 5%;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
+font-size: 15px;
+letter-spacing: 1px;
+}
+
+li{
+    padding: 0;
+    margin-right: 0px;
+    margin-left: 50px
+}
+
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#image{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 523px;
+}
+
+img{
+    width: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+    
+}
