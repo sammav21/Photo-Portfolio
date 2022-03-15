@@ -42,8 +42,15 @@ li{
 li:hover{
     cursor: pointer;
     text-decoration: underline;
+    color: #28282B
 }
 
+a, a:visited, a:hover, a:active{
+    color:#28282B;
+    text-decoration: none;
+}
+
+/*HOME PAGE*/
 #image{
     display:flex;
     justify-content: center;
@@ -57,4 +64,28 @@ img{
     object-fit:cover;
     object-position: 50% 50%;
     
+}
+
+/*CONTACT PAGE*/
+
+#about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#pic{
+    width:300px;
+    height: 400px;
+    margin-left: 40px;
+    border-style:solid;
+    border-color: bisque;
+    border-width: 30px;
+    box-shadow: 10px 10px blue; /*experimenting possible designs/diff collors*/
+
+}
+
+#about{
+    width:30%;
+    margin: 0 40px 20px 0;
 }
