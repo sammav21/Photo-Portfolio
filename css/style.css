@@ -2,12 +2,97 @@ body{
     background-color: #f2f3f4;
     margin: 0;
     padding:0;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+/*Home page*/ 
+
+.h-background{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;    
+}
+
+.h-content{
+    position: relative;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 40vh;
+    right: 6vw;
+}
+
+#h-name{
+font-family: 'Bebas Neue', cursive;
+font-size: 10vw;
+letter-spacing: 1px;
+margin: 0;
+}
+
+#h-name:hover{
+    cursor: pointer;
+}
+
+.h-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    position: relative;
+    right: 8vw;
+  }
+
+#h-navbtn{
+    border: none;
+    background: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3vw;
+    letter-spacing: 1px;
+}
+
+.h-about{
+    margin-top: 2vh;
+}
+.h-about:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #28282B
+}
+
+.h-dropmenu{
+    display: flex;
+    align-items: center;
+    position: relative;
     
 }
 
+#h-ul{
+    display:none; /*I want to click "work" and then it goes invisble and the dropdown is positioned over it. BUt with display none the UL is actually covering the "work" button so i can't click it*/
+    position: absolute;
+    list-style: none;
+    padding: 0px 0px 0px;
+    z-index: 1;
+    background-color: #f2f3f4;
+}
 
+.h-links{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    padding: 10px 6px 10px;
+}
+
+.h-dropmenu:hover .h-ul{ 
+    display: flex;
+}
+
+
+/*General site layout*/ 
 #header{
     display: flex;
     justify-content: space-between;
@@ -60,11 +145,11 @@ a, a:visited, a:hover, a:active{
 }
 
 
-li:hover{
+.links:hover{
     background-color: #28282B;
 }
 
-li:hover #dropbtn{
+.links:hover #dropbtn{
     color: #f2f3f4;
 }
 
@@ -75,7 +160,7 @@ li:hover #dropbtn{
     flex-direction: column;
 }
 
-ul{
+.ul{
     display: none;
     position: absolute;
     list-style: none;
@@ -87,35 +172,19 @@ ul{
     /*box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2); Do some variation of this for my drop down*/
 }
 
-li{
+.links{
     font-family: 'Bebas Neue', cursive;
     font-size: 15px;
     letter-spacing: 1px;
     padding: 10px 6px 10px;
 }
 
-.dropmenu:hover ul{ 
+.dropmenu:hover .ul{ 
     display: block;
 }
 
 
-
-/*HOME PAGE*//*Still need to figure out do I text on top of pic? How to keep image from showing whitespace on smaller screen and avoid creating the scroll bar on bigger screens*/
-
-#imgcontain{
-    position: absolute;
-    width: 100%;
-    height: 86.70%;
-    margin:0;
-}
-
-#homepic{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-/*About*/
+/*About page*/
 
 #main-content{
     display: flex;
