@@ -2,7 +2,7 @@ body{
     background-color: #f2f3f4;
     margin: 0;
     padding:0;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 /*Home page*/ 
@@ -43,7 +43,7 @@ body{
 #h-name{
 font-family: 'Bebas Neue', cursive;
 font-size: 10vw;
-letter-spacing: 1px;
+letter-spacing: 3px;
 margin: 0;
 padding: 0;
 color: #28282B;
@@ -83,12 +83,13 @@ color: #28282B;
 }
 
 #h-ul{
-    display:none; /*I want to click "work" and then it goes invisble and the dropdown is positioned over it. BUt with display none the UL is actually covering the "work" button so i can't click it*/
+    display:flex;
+    transition: all 0s ease 0.5s;
+    visibility: hidden;
     position:absolute;
     list-style: none;
-    padding: 0px 0px 0px;
+    padding: 0;
     z-index: 1;
-    background-color: #f2f3f4;
 }
 
 .h-links{
@@ -97,10 +98,13 @@ color: #28282B;
     letter-spacing: 1px;
     padding: 10px 4px 10px;
     position: relative;
+    right: 50px;
+    background-color: #f2f3f4;
 }
 
-.h-dropmenu:hover #h-ul{ 
-    display: flex;
+.h-dropmenu:hover #h-ul{  /*might have to JS here to get the open on click now hover */
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 .h-links:hover{
@@ -110,12 +114,12 @@ color: #28282B;
     color: #f2f3f4;
 }
 
-/*General site layout*/ 
+/*General site header*/ 
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
     color: #28282B;
     width: 100%;
 }
@@ -124,7 +128,7 @@ color: #28282B;
 margin-left: 5%; /*Check back on this after I load actual pics to see how the spacing feels */
 padding: 0;
 font-family: 'Bebas Neue', cursive;
-font-size: 20px;
+font-size: 5vh;
 letter-spacing: 1px;
 }
 
@@ -141,7 +145,7 @@ letter-spacing: 1px;
 }
 
 .about{
-    margin-left: 60px;
+    margin-left: 65px;
 }
 #navbtn{
     border: none;
@@ -149,11 +153,11 @@ letter-spacing: 1px;
     font-family: 'Bebas Neue', cursive;
     font-size: 15px;
     letter-spacing: 1px;
+    color: #28282B;
 }
 
 .about:hover{
     cursor: pointer;
-    text-decoration: underline;
     color: #28282B
 }
 
@@ -162,12 +166,17 @@ letter-spacing: 1px;
     text-decoration: none;
 }
 
-
+.btn{
+    padding: 10px 6px;
+}
+.links a{
+   display: block;
+}
 .links:hover{
     background-color: #28282B;
 }
 
-.links:hover #dropbtn{
+.links:hover .btn{
     color: #f2f3f4;
 }
 
@@ -179,14 +188,16 @@ letter-spacing: 1px;
 }
 
 .ul{
-    display: none;
+    display:block;
+    transition: all 0s ease .5s;
+    visibility: hidden;
     position: absolute;
     list-style: none;
-    padding: 16px 0px 0px;
+    padding: 0;
+    top: 2vh;
     z-index: 1;
-    background-color: #f2f3f4;
-    border-width: .5px;
-    min-width: 100px;
+    background-color:#e4e6e78f;
+
     /*box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2); Do some variation of this for my drop down*/
 }
 
@@ -194,72 +205,63 @@ letter-spacing: 1px;
     font-family: 'Bebas Neue', cursive;
     font-size: 15px;
     letter-spacing: 1px;
-    padding: 10px 6px 10px;
+    padding: 0;
+    position: relative;
 }
 
 .dropmenu:hover .ul{ 
-    display: block;
+    transition-delay: 0s;
+    visibility: visible;
 }
 
 
 /*About page*/
 
-#main-content{
+.main-content{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
-    margin: 0;
-    position: absolute;
+    height: 100%;
+    margin-top: 15px;
 }
 
 
 #pic{
-    width: 30%;
-    margin-top: 15px;
-    margin-left: 30px;
-    border-style:solid;
-    border-color: #28282B;
-    border-width: 1px;
-    position: relative;
+    height:65vh;
+    border: solid 1px #28282B;
+    margin: 0 5% 0 5%;
 }
 
-#vert-text{
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    width: 50%;
-    position: relative;
-    
-}
-#vert{
-    margin-right: 50px;
-    height: 300px;
-    border-left: solid 1px #28282B;
-}
-
-#text-horz{
+#right-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    border-left: solid 1px;
+    
 }
+
 
 p{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: larger;
-    font-weight: 300;
-    line-height: 25px;
-    padding-top: 50px;
+    font-size : clamp(1rem, 2vw, 5rem);
+    font-weight: 400;
+    width: 80%;
+    height: 50%;
 }
+
 
 #ig{
     margin-top: 10px;
     color:#28282B;
 }
-#horz{
-    padding-top:30px;
-    width: 350px;
+#horiline{
+    position: relative;
+    top: 15px;
+    width: 70%;
     border-bottom: solid 1px #28282B;
 }
 
@@ -286,7 +288,7 @@ span{
     height: 100%;
 }
 
-.pics, .title{
+.pics{
     padding: 0;
     margin:0;
     width: 40%;
@@ -321,16 +323,15 @@ span{
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue', cursive;
-    font-size: 15vw;
-    letter-spacing: 1vw;
+    font-size: 8vw;
 }
 
 .title{
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 54%;
-    top: 8vw;
+    left: 63%;
+    top: 14vw;
 }
 
 /*portraits*/
@@ -338,14 +339,29 @@ span{
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue', cursive;
-    font-size: 11vw;
-    letter-spacing: 1vw;
+    font-size: 8vw;
 }
 
-.title{
+.P-title{
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 51%;
+    left: 59%;
+    top: 14vw;
+}
+
+/*photojournalism*/
+#photojourn{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+}
+
+.ph-title{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 50%;
     top: 14vw;
 }
