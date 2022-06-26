@@ -3,10 +3,13 @@
  padding: 0;
  box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #f2f3f4;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
 }
 
 ::-webkit-scrollbar{
@@ -273,41 +276,53 @@ span{
 /*photo pages*/
 
 .content{
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    color: #28282B;
 }
 
 .pics{
-    width: 40%;
+    width: 47%;
 }
 
 #firstleftpic{
     position: relative;
-    right: 22%;
+    right: 24%;
     margin:  5% 0 0 0;
 }
 
 
 #leftpics{
     position: relative;
-    right: 22%;
+    right: 24%;
     bottom: 23vw;
 }
 
 #firstrightpic{
     position: relative;
-    left: 22%;
+    left: 24%;
     bottom: 18vw;
 }
 #rightpics{
     position: relative;
-    left: 22%;
-    bottom: 23vw
+    left: 24%;
+    bottom: 23vw;
 }
 
+
+#arrow{
+    font-size: 10px;
+    position: fixed;
+    bottom: 2%;
+    left: 97.7%;
+    cursor: pointer;
+    padding: .6%;
+    background-color: #28282B;
+    border-radius: 20px;
+    color: #f2f3f4;
+}
 /*street*/
 #street{
     font-family: 'Bebas Neue', cursive;
@@ -317,7 +332,7 @@ span{
 .title{
     position: absolute;
     left: 63%;
-    top: 14vw;
+    top: 25vw;
 }
 
 /*portraits*/
@@ -329,20 +344,20 @@ span{
 .P-title{
     position: absolute;
     left: 59%;
-    top: 14vw;
+    top: 25vw;
 }
 
 /*photojournalism*/
-#photojourn{
+#places{
 
     font-family: 'Bebas Neue', cursive;
     font-size: 8vw;
 }
 
-.ph-title{
+.pl-title{
     position: absolute;
-    left: 50%;
-    top: 14vw;
+    left: 65%;
+    top: 25vw;
 }
 
 @media (min-width:01px) and (max-width:480px){
@@ -379,32 +394,35 @@ span{
         padding: 10px 5px 10px;
     }
 
-
+    .rightheader{
+        margin-right: 2%;
+    }
 
     .main-content{
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
         margin: 2% auto;
     
     }
     
     
     #pic{
-        height:50vh;
+        height:53vh;
         margin: 0 5%;
     }
 
     #right-content{
         width: 90%;
-        margin: 10px 0px 30px;
+        margin: 0;
     }
 
-    P{
-        width: 90%;
+    p{
+        width: 95%;
     }
+    
 
     .pics{
-        width: 90%;
+        width: 95%;
     }
 
     #firstleftpic{
@@ -422,9 +440,14 @@ span{
 
     }
     
-    .title, .P-title, .ph-title{
+    #arrow{
+        font-size: 12px;
+        left: 95.5%;
+        bottom: .5%;
+    }
+    .title, .P-title, .pl-title{
         left: 5%;
-        top: 1vw;
+        top: 13vw;
         letter-spacing: 10px;
         margin-top: 5%
     }
@@ -439,6 +462,10 @@ span{
 
     P{
         width: 95%;
+    }
+
+    #arrow{
+        left: 97.3%;
     }
 
 }
