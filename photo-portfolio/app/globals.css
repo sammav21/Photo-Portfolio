@@ -1,0 +1,474 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ body{
+     background-color: #f2f3f4;
+     height: 100vh;
+     width: 99vw;
+ }
+ 
+ ::-webkit-scrollbar{
+     width: 5px;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+     background: #28282B;
+     border-radius: 20px;
+ }
+ 
+ 
+ /*Home page*/ 
+ 
+ .h-background{
+     height: 90vh;
+     width: 90vw;
+     position: relative;
+     background-size: cover;
+     margin: 2% auto auto;
+     overflow: hidden; 
+     display: flex;
+     align-items:center;
+     box-shadow: 0px 40px 40px 30px #cfcfd0;
+ }
+ 
+ 
+ .h-content{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+ 
+ #h-dropbtn{
+     padding:inherit;
+     color: #28282B;
+     text-decoration: none;
+ }
+ 
+ 
+ .h-btn, .h-btn:visited, .h-btn:hover, .h-btn:active{
+     color: inherit;
+     text-decoration: none;
+ }
+ 
+ #h-name{
+ font-family: 'Bebas Neue', cursive;
+ font-size: 10vw;
+ letter-spacing: 3px;
+ color: #f2f3f4;
+ }
+ 
+ 
+ .h-menu{
+     display: flex;
+     align-items: center;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background-color: #f2f3f448;
+   }
+ 
+ #h-navbtn{
+     border: none;
+     background: none;
+     font-family: 'Bebas Neue', cursive;
+     padding: 15px;
+     font-size: 2vw;
+     letter-spacing: 1px;
+     color: #28282B;
+ }
+ 
+ .h-btn:hover{
+     color: #f2f3f4;
+ }
+ 
+ 
+ .h-dropmenu{
+     display: flex;
+     align-items:center;
+     position: relative;
+ }
+ 
+ #h-ul{
+     display:flex;
+     flex-direction: column;
+     transition: all 0s ease 0.5s;
+     visibility: hidden;
+     position:absolute;
+     list-style: none;
+     z-index: 1;
+     bottom: 100%;
+ }
+ 
+ .h-links{
+     font-family: 'Bebas Neue', cursive;
+     font-size: 1.5vw;
+     letter-spacing: 1px;
+     padding: 8px 4px 8px;
+     background-color: #f2f3f448;
+ }
+ 
+ .h-dropmenu:hover #h-ul{ 
+     visibility: visible;
+     transition-delay: 0s;
+ }
+ 
+ 
+ .h-links:hover{
+     background-color: #28282B;
+ }
+ .h-links:hover #h-dropbtn{
+     color: #f2f3f4;
+ }
+ 
+ /*General site header*/ 
+ header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 15px;
+     color: #28282B;
+     width: 100%;
+ }
+ 
+ #name{
+ margin-left: 5%; /*Check back on this after I load actual pics to see how the spacing feels */
+ font-family: 'Bebas Neue', cursive;
+ font-size: 4vw;
+ letter-spacing: 1px;
+ 
+ }
+ 
+ #name:hover{
+     cursor: pointer;
+ }
+ 
+ #nameLink{
+     text-decoration: none;
+     color: #28282B;  
+ }
+ 
+ .rightheader{
+   display: flex;
+   margin-right: 5%;
+   position: relative;
+ }
+ 
+ .navbtn{
+     border: none;
+     background: none;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 2vw;
+     letter-spacing: 1px;
+     color: #28282B;
+     padding: 1.5vw;
+     position: relative;;
+ }
+  #about{
+     text-decoration: none;
+     color: #28282B;
+  }
+ 
+ 
+ .dropbtn, .dropbtn:visited, .dropbtn:active{
+     color: #28282B;
+     text-decoration: none;
+ }
+ .dropbtn:hover{
+     color: #f2f3f4;
+ }
+ 
+ .dropbtn{
+     font-size: 1.5vw;
+     padding: 10px 6px;
+ }
+ .links a{
+    display: block;
+ }
+ .links:hover{
+     background-color: #28282B;
+ }
+ 
+ .links:hover .btn{
+     color: #f2f3f4;
+ }
+ 
+ .ul{
+     font-family: 'Bebas Neue', cursive;
+     display:block;
+     transition: all 0s ease .5s;
+     visibility: hidden;
+     position: absolute;
+     list-style: none;
+     z-index: 1;
+     background-color:#e4e6e78f;
+ }
+ 
+ .dropmenu:hover .ul{ 
+     transition-delay: 0s;
+     visibility: visible;
+ }
+ 
+ 
+ /*About page*/
+ 
+ .main-content{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 100vw;
+     height: 80vh;
+     margin: auto;
+ 
+ }
+ 
+ 
+ #pic{
+     height:65vh;
+     margin:0% 5%;
+ }
+ 
+ #right-content{
+     display: flex;
+     flex-direction: column;
+     align-items:flex-start;
+     width: 50vw;
+     height: auto;
+     border-left: solid 1px;
+     padding-left: 5%;
+ }
+ p{
+     font-family: 'Roboto Condensed', sans-serif;
+     font-size : clamp(1rem, 2vw, 5rem);
+     font-weight: 400;
+     width: 80%;
+     text-align:start;
+ }
+ 
+ span{
+     color:#28282B;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 3.5vw;
+     letter-spacing: 2px;
+     margin-top: 15px;
+     
+ }
+ 
+ #ig{
+     color:#28282B;
+ }
+ #horiline{
+     position: relative;
+     top: 15px;
+     width: 70%;
+     border-bottom: solid 1px #28282B;
+ }
+ 
+ /*contact*/
+ 
+ 
+ /*photo pages*/
+ 
+ .content{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     color: #28282B;
+ }
+ 
+ .pics{
+     width: 47%;
+ }
+ 
+ #firstleftpic{
+     position: relative;
+     right: 24%;
+     margin:  5% 0 0 0;
+ }
+ 
+ 
+ #leftpics{
+     position: relative;
+     right: 24%;
+     bottom: 23vw;
+ }
+ 
+ #firstrightpic{
+     position: relative;
+     left: 24%;
+     bottom: 18vw;
+ }
+ #rightpics{
+     position: relative;
+     left: 24%;
+     bottom: 23vw;
+ }
+ 
+ 
+ #arrow{
+     font-size: 10px;
+     position: fixed;
+     bottom: 2%;
+     left: 97.7%;
+     cursor: pointer;
+     padding: .6%;
+     background-color: #28282B;
+     border-radius: 20px;
+     color: #f2f3f4;
+ }
+ /*street*/
+ #street{
+     font-family: 'Bebas Neue', cursive;
+     font-size: 8vw;
+ }
+ 
+ .title{
+     position: absolute;
+     left: 63%;
+     top: 25vw;
+ }
+ 
+ /*portraits*/
+ #portraits{
+     font-family: 'Bebas Neue', cursive;
+     font-size: 8vw;
+ }
+ 
+ .P-title{
+     position: absolute;
+     left: 59%;
+     top: 25vw;
+ }
+ 
+ /*photojournalism*/
+ #places{
+ 
+     font-family: 'Bebas Neue', cursive;
+     font-size: 8vw;
+ }
+ 
+ .pl-title{
+     position: absolute;
+     left: 65%;
+     top: 25vw;
+ }
+ 
+ @media (min-width:01px) and (max-width:480px){
+     .h-background{
+         height: 90vh;
+         width: 90vw;
+         margin: 10% auto;
+     }
+     #h-name{
+         font-size: 14vw;
+         letter-spacing: 2px;
+         }
+ 
+     #h-navbtn{
+         font-size: 6vw;
+         letter-spacing: 1px;
+     }
+ 
+     .h-links{
+         font-size: 4vw;
+         letter-spacing: 1px;
+         padding: 6px 4px 6px;
+     }
+ 
+     #name{
+         font-size: 6.5vw;
+         margin-left: 3vw;
+     }
+     .navbtn{
+         font-size: 3.5vw;
+     }
+     .dropbtn{
+         font-size: 3vw;
+         padding: 10px 5px 10px;
+     }
+ 
+     .rightheader{
+         margin-right: 2%;
+     }
+ 
+     .main-content{
+         flex-direction: column;
+         height: 90vh;
+         margin: 2% auto;
+     
+     }
+     
+     
+     #pic{
+         height:53vh;
+         margin: 0 5%;
+     }
+ 
+     #right-content{
+         width: 90%;
+         margin: 0;
+     }
+ 
+     p{
+         width: 95%;
+     }
+     
+ 
+     .pics{
+         width: 95%;
+     }
+ 
+     #firstleftpic{
+         right: 0%;
+         margin:  15% 0 5%;
+     }
+     
+     
+     #leftpics, #firstrightpic, #rightpics{
+         position: relative;
+         right: 0%;
+         left:0%;
+         bottom: 0;
+         margin: 0 0 5%;
+ 
+     }
+     
+     #arrow{
+         font-size: 12px;
+         left: 95.5%;
+         bottom: .5%;
+     }
+     .title, .P-title, .pl-title{
+         left: 5%;
+         top: 13vw;
+         letter-spacing: 10px;
+         margin-top: 5%
+     }
+ 
+ }
+ 
+ @media (min-width:481px) and (max-width:687px){
+    
+ #pic{
+     height: 50vh;
+ }
+ 
+     P{
+         width: 95%;
+     }
+ 
+     #arrow{
+         left: 97.3%;
+     }
+ 
+ }
+ 
+ 
+ /*consider lazy loading images*/
