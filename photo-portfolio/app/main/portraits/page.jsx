@@ -1,8 +1,18 @@
+import {Bebas_Neue} from 'next/font/google';
+import PORTRAITS from '@public/assets/Portrait';
+import PhotoDisplay from '@components/PhotoDisplay';
 
-export default function Portraits() {
+const bebas_neue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: '400'
+});
+
+export default function People() {
+  const images = Object.values(PORTRAITS);
   return (
-    <div class="content">
-        <div class="P-title"><H1 id="portraits">PORTRAITS</H1></div>
+    <div className="content">
+      <h1 className='photoPageTitle' id='portraitTitle'  style={bebas_neue.style}>PEOPLE</h1>
+      <PhotoDisplay images={images}/>
     </div>
   )
 }
