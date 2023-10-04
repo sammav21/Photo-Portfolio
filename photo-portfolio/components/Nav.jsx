@@ -18,7 +18,7 @@ export default function Nav() {
             <button className="navBtn" style={bebas_neue.style} onClick={() => setMenuVisible(!menuVisible)}>Work</button>
                 <div className={menuVisible ? "w100 flex-col dropMenuVisible": "dropMenuHidden"}>
                     <Link className="dropBtn" id="btn" href='/main/street'>Street</Link>
-                    <Link className="dropBtn" href='/main/portraits'>Portraits</Link>
+                    <Link className="dropBtn" href='/main/portraits'>People</Link>
                     <Link className="dropBtn" href='/main/places'>Places</Link>
                 </div>
             </div>
