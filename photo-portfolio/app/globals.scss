@@ -2,7 +2,7 @@
 *{
   margin:0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
  }
  html{
      scroll-behavior: smooth;
@@ -232,89 +232,35 @@ li:hover .link{
  /*photo pages*/
  
  .content{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 100%;
-     color: #28282B;
- }
- 
- .pics{
-     width: 47%;
- }
- 
- #firstleftpic{
-     position: relative;
-     right: 24%;
-     margin:  5% 0 0 0;
+    flex-direction: row-reverse;
+    position: relative;
  }
  
  
- #leftpics{
-     position: relative;
-     right: 24%;
-     bottom: 23vw;
- }
  
- #firstrightpic{
-     position: relative;
-     left: 24%;
-     bottom: 18vw;
- }
- #rightpics{
-     position: relative;
-     left: 24%;
-     bottom: 23vw;
- }
- 
- 
- #arrow{
-     font-size: 10px;
-     position: fixed;
-     bottom: 2%;
-     left: 97.7%;
-     cursor: pointer;
-     padding: .6%;
-     background-color: #28282B;
-     border-radius: 20px;
-     color: #f2f3f4;
- }
- /*street*/
- #street{
-     font-family: 'Bebas Neue', cursive;
-     font-size: 8vw;
- }
- 
- .title{
-     position: absolute;
-     left: 63%;
-     top: 25vw;
- }
+//  #arrow{
+//      font-size: 10px;
+//      position: fixed;
+//      bottom: 2%;
+//      left: 97.7%;
+//      cursor: pointer;
+//      padding: .6%;
+//      background-color: #28282B;
+//      border-radius: 20px;
+//      color: #f2f3f4;
+//  }
+
  
  /*portraits*/
- #portraits{
-     font-family: 'Bebas Neue', cursive;
-     font-size: 8vw;
+
+ #placesTitle{
+    font-size: 8vw;
+    position: absolute;
+    right: 15%;
+    margin-top: 12rem;
+    line-height: 1;
  }
  
- .P-title{
-     position: absolute;
-     left: 59%;
-     top: 25vw;
- }
- 
- /*photojournalism*/
- #places{
- 
-     font-family: 'Bebas Neue', cursive;
-     font-size: 8vw;
- }
- 
- .pl-title{
-     position: absolute;
-     left: 65%;
-     top: 25vw;
- }
  
  @media (min-width:01px) and (max-width:480px){
      .h-background{
