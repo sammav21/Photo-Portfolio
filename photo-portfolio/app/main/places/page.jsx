@@ -14,7 +14,7 @@ export default function Places() {
   
   return (
     <div className="content">
-        <h1 className="photoPageTitle"  style={bebas_neue.style}>PLACES</h1>
+        <h1 className="photoPageTitle w100 background-display-text"  style={bebas_neue.style}>PLACES</h1>
         <PhotoDisplay images={images}/>
     </div>
   )

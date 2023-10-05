@@ -1,0 +1,27 @@
+@use '../base/index';
+
+.aboutText-Wrapper{
+    align-items:flex-start;
+    width: 50%;
+    padding: 2rem;
+ }
+
+span{
+    line-height: 2rem;
+    background-color: index.$primary-background-color;
+    box-shadow: .25rem 0.25rem  index.$secondary-background-color;
+}
+
+.actionCall{
+    span{
+        box-shadow: .25rem 0.25rem  index.$accent-color;
+        a{
+            color: index.$accent-color;
+        }
+        a:hover{
+            color: index.$secondary-text-color;
+            background-color: index.$accent-color;
+            transition: .5s;
+        }
+    }
+}
