@@ -1,0 +1,8 @@
+@use '../base/index';
+.photoPageTitle{
+    color: index.$secondary-background-color;
+    position: fixed;
+    top: 10%;
+    left: -1.5%;
+    z-index: -1;
+  }

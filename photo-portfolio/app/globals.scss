@@ -1,232 +1,60 @@
+@use '@styles/base/index';
+@use '@styles/pages';
 
 *{
-  margin:0;
-  padding: 0;
   box-sizing:border-box;
  }
  html{
      scroll-behavior: smooth;
  }
  body{
-     background-color: #f2f3f4;
- }
- 
- .w100{
-    width: 100%;
-  }
-  .h100{
-    height: 100%;
-  }
-  
-  .flex{
-    display: flex;
-  }
-  .flex-col{
-    display: flex;
-    flex-direction: column;
-  }
-  .flex-row-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .flex-row-between{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .flex-col-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    background-color: index.$primary-background-color;
+}
+    p, h3{
+        color: index.$primary-text-color;
+    }
 
-//  ::-webkit-scrollbar{
-//      width: 5px;
-//  }
- 
-//  ::-webkit-scrollbar-thumb{
-//      background: #28282B;
-//      border-radius: 20px;
-//  }
- 
- 
- /*Home page*/ 
- .home-Wrapper{
-    height: 100vh;
+ ::-webkit-scrollbar{
+     width: .75rem;
  }
  
- .link{
-     padding:inherit;
-     color: #28282B;
-     text-decoration: none;
- }
- 
- 
- .h-btn, .h-btn:visited, .h-btn:hover, .h-btn:active{
-     color: inherit;
-     text-decoration: none;
- }
- 
- #home-Title{
- font-size: 5vw;
- letter-spacing: 3px;
- line-height: 1;
- color: #f2f3f4; 
+ ::-webkit-scrollbar-thumb{
+     background: index.$secondary-background-color;
+     border-radius: 10px;
  }
 
- .home-Btn{
-     border: none;
-     background: none;
-     padding: 15px;
-     font-size: 2vw;
-     letter-spacing: 1px;
-     color: #28282B;
-     cursor: pointer;
- }
+ button{
+    border: none;
+    background: none;
+    cursor: pointer;
+ } 
  
- .home-Btn:hover{
-     color: #f2f3f4;
- }
- 
-
- .menuHidden{
-    display: none;
- }
- .menuVisible{
-    display: flex;
-    position: absolute;
-    bottom: 25%;
-  
- }
-
-li{
-     font-size: 1.5vw;
-     letter-spacing: 1px;
-     padding: 1rem .5rem;
-     background-color: #f2f3f448;
-     list-style: none;
- }
- 
-li:hover{
-     background-color: #28282B;
- }
-li:hover .link{
-     color: #f2f3f4;
- }
- 
- /*General site header*/ 
- nav{
-     margin: 1.5rem 3rem;
-     color: #28282B;
- }
- 
- .logo{
- font-size: 4vw;
- letter-spacing: 1px;
- text-decoration: none;
- color: #28282B; 
- }
- 
+ /*Nav*/ 
 
  .dropMenu-Wrapper{
     position: relative;
-    margin-right: 2rem;
-    width: 5rem;
-    align-items: flex-end;
-
- }
- .navBtn{
-    font-size: 2vw;
-    letter-spacing: .4px;
-    color: #28282B;
-    position: relative;
-    text-decoration: none;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
    
-}
+ }
+
+
 .dropMenuVisible{
     position: absolute;
-    list-style: none;
     top: 120%;
-    left: 0%;
     z-index: 1;
  }
  .dropMenuHidden{
     display: none;
  }
 
- .dropBtn{
-    font-size: 1.5vw;
-    width: 100%;
-    background-color:#e4e6e78f;
-    text-align: end;
-    color: #28282B;
-    text-decoration: none;
-}
-.dropBtn:hover{
-   background-color: #28282B;
-   color: #f2f3f4;
-}
- 
-.aboutContent-Wrapper {
-    width: 80%;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 auto;
-}
-.aboutText-Wrapper{
-    align-items:flex-start;
-    width: 50%;
-    padding: 2rem;
-    color: #28282B;
-    border-radius: 10px;
- }
- p{
-    font-size: 1.5rem;
-    text-align:start;
- }
-span{
-    line-height: 2rem;
-    background-color: #f2f3f4;
-    box-shadow: .25rem 0.25rem  #28282be6;
+.dropBtn:hover{ 
+   box-shadow: 0rem 0.25rem #778DA9;
+   transition: .5s;
+   p{
+    transition: .5s;
+    font-size: calc(index.$smallText + 2.5px);
+   }
 }
 
-.actionCall{
-    span{
-        box-shadow: .25rem 0.25rem  #EB5E28;
-
-        a{
-            color: #EB5E28;
-            text-decoration: none;
-        }
-        a:hover{
-            color: #f2f3f4;
-            background-color: #EB5E28;
-            transition: .5s;
-        }
-    }
-}
- 
- #ig{
-     color:#28282B;
- }
- 
- /*contact*/
- 
- 
- /*photo pages*/
- 
- .content{
-    position: relative;
- }
- 
- 
- 
 //  #arrow{
 //      font-size: 10px;
 //      position: fixed;
@@ -239,21 +67,6 @@ span{
 //      color: #f2f3f4;
 //  }
 
- 
- /*portraits*/
-
- .photoPageTitle{
-    width: 100%;
-    font-size: 33rem;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 10%;
-    // right: 10%;
-    // top: 12rem;
-    z-index: -1;
-    color:#28282B;
- }
 
  
  

@@ -1,0 +1,17 @@
+$black-blue: #28282B;
+$off-white: #f2f3f4;
+$babyBlue: #778DA9;
+
+/*components*/
+$primary-text-color:$black-blue;
+$secondary-background-color: $black-blue;
+$secondary-text-color: $off-white;
+$primary-background-color:$off-white;
+$accent-color: $babyBlue;
+
+ /*nav*/
+ .navBtn:hover{
+    p, h3{
+        color: #778DA9;
+    }
+ }

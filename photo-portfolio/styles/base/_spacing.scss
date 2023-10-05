@@ -1,0 +1,64 @@
+$gutter: 3rem;
+$btn-Margin-Horizontal: 0 1rem;
+$btn-Margin-Vertical: .25rem 0rem;
+$btn-Padding-Rectangle: .5rem 1rem;
+
+*{
+  margin:0;
+  padding: 0;
+}
+.w100{
+  width: 100%;
+}
+.h100{
+  height: 100%;
+}
+.flex{
+  display: flex;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-row-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-row-even{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex-col-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*home*/
+.home-Wrapper{
+  height: 100vh;
+}
+.btn-Margin-Horizontal{
+  margin: $btn-Margin-Horizontal;
+}
+.btn-Margin-Vertical{
+  margin: $btn-Margin-Vertical;
+}
+.btn-Padding-Rectangle{
+  padding: $btn-Padding-Rectangle;
+}
+/*nav*/
+nav{
+  margin: 1.5rem $gutter;
+}
+.photos-Wrapper, .about-Wrapper{
+  margin:  0 $gutter;
+}
+

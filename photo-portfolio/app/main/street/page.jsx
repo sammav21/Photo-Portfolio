@@ -11,7 +11,7 @@ export default function Street() {
   const images = Object.values(STREET);
   return (
     <div className="content" >
-      <h1 className='photoPageTitle'  style={bebas_neue.style}>STREET</h1>
+      <h1 className='photoPageTitle w100 background-display-text'  style={bebas_neue.style}>STREET</h1>
       <PhotoDisplay images={images}/>
     </div>
   )

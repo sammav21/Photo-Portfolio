@@ -1,0 +1,30 @@
+$home-display-text: 5rem;
+$background-display-text: 33rem;
+$primary-heading: 2.5rem;
+$secondary-heading: 1.5rem;
+$smallText: 1.15rem;
+
+.link, a{
+    text-decoration: none;
+}
+
+.home-display-text{
+    font-size: $home-display-text;
+    letter-spacing: .5rem;
+}
+
+.primary-Heading{
+    font-size: $primary-heading;
+     
+}
+.secondary-Heading{
+    font-size: $secondary-heading;  
+}
+
+.smallText{
+    font-size: $smallText;  
+}
+
+.background-display-text{
+    font-size: $background-display-text;  
+}

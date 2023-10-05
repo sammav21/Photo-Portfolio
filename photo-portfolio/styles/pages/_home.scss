@@ -1,0 +1,29 @@
+@use '../base/index';
+
+.home-display-text{
+    color: index.$secondary-text-color; 
+    letter-spacing: .5rem;
+}
+
+.link-Home:hover{
+    p{color: index.$secondary-text-color;}
+ }
+
+.menuHidden{
+    display: none;
+ }
+ .menuVisible{
+    display: flex;
+    position: absolute;
+    bottom: 25%;
+ }
+
+ .btn-Home:hover{
+    transition: 0.5s;
+    box-shadow: 0rem 0.25rem index.$accent-color;
+    p{
+        transition: .5s;
+        font-size: calc(index.$secondary-heading + 2.5px);
+        color: index.$secondary-text-color;
+    } 
+  }
