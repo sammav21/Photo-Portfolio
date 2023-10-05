@@ -2,7 +2,6 @@
 
 .home-display-text{
     color: index.$secondary-text-color; 
-    letter-spacing: .5rem;
 }
 
 .link-Home:hover{
@@ -15,7 +14,7 @@
  .menuVisible{
     display: flex;
     position: absolute;
-    bottom: 25%;
+    bottom: 30%;
  }
 
  .btn-Home:hover{
@@ -23,7 +22,7 @@
     box-shadow: 0rem 0.25rem index.$accent-color;
     p{
         transition: .5s;
-        font-size: calc(index.$secondary-heading + 2.5px);
+        font-size: calc(index.$secondary-heading + .75rem);
         color: index.$secondary-text-color;
     } 
   }

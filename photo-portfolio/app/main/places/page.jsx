@@ -13,8 +13,8 @@ export default function Places() {
   const images = Object.values(PLACES);
   
   return (
-    <div className="content">
-        <h1 className="photoPageTitle w100 background-display-text"  style={bebas_neue.style}>PLACES</h1>
+    <div className="photos-Wrapper flex-col-center">
+        <h1 className="page-Title  background-display-text"  style={bebas_neue.style}>PLACES</h1>
         <PhotoDisplay images={images}/>
     </div>
   )

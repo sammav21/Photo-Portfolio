@@ -10,8 +10,8 @@ const bebas_neue = Bebas_Neue({
 export default function People() {
   const images = Object.values(PORTRAITS);
   return (
-    <div className="content">
-      <h1 className='photoPageTitle w100 background-display-text' style={bebas_neue.style}>PEOPLE</h1>
+    <div className="photos-Wrapper flex-col-center">
+      <h1 className='page-Title background-display-text' style={bebas_neue.style}>PEOPLE</h1>
       <PhotoDisplay images={images}/>
     </div>
   )
