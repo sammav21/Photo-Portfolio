@@ -1,8 +1,27 @@
 @use '../base/index';
-.photoPageTitle{
+
+.page-Title{
     color: index.$secondary-background-color;
-    position: fixed;
-    top: 10%;
-    left: -1.5%;
+    position: sticky;
+    top: 0%;
     z-index: -1;
+    line-height: 1;
+  @media screen and (min-width: 48em) {
+    position: fixed;
+    //position the word towards bottom
   }
+  }
+.photo{
+  width: 100%;
+  margin: 0 0  2rem;
+  @media screen and (min-width: 48em) {
+  width: 55%;
+   margin: 0 0  1rem;
+  }
+}
+.left{
+  align-self: flex-start;
+}
+.right{
+  align-self: flex-end;
+}

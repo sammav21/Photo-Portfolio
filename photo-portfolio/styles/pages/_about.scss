@@ -1,9 +1,15 @@
 @use '../base/index';
 
+.about-Picture{
+    width: 90%;
+}
 .aboutText-Wrapper{
-    align-items:flex-start;
-    width: 50%;
-    padding: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    p{
+        text-align:center;
+    }
+    // padding: 2rem;
  }
 
 span{

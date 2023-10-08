@@ -1,8 +1,8 @@
-$home-display-text: 5rem;
-$background-display-text: 33rem;
-$primary-heading: 2.5rem;
+$home-display-text: 3.25rem;
+$background-display-text: 45vw;
+$primary-heading: 2rem;
 $secondary-heading: 1.5rem;
-$smallText: 1.15rem;
+$smallText: 1rem;
 
 .link, a{
     text-decoration: none;
@@ -10,21 +10,41 @@ $smallText: 1.15rem;
 
 .home-display-text{
     font-size: $home-display-text;
-    letter-spacing: .5rem;
+    letter-spacing: 0.25rem;
+    @media screen and (min-width: 35em) {
+        font-size: $home-display-text + 1rem;
+    }
+    @media screen and (min-width: 48em) {
+        font-size: $home-display-text + 2rem;
+    }
 }
 
 .primary-Heading{
     font-size: $primary-heading;
-     
+    @media screen and (min-width: 35em) {
+        font-size: $primary-heading + .75rem;
+    }
+    @media screen and (min-width: 48em) {
+        font-size: $primary-heading + 1.25rem;
+    }
 }
 .secondary-Heading{
     font-size: $secondary-heading;  
+    @media screen and (min-width: 35em) {
+        font-size: $secondary-heading + .5rem;
+    }
+    @media screen and (min-width: 48em) {
+        font-size: $secondary-heading + .75rem;
+    }
 }
 
 .smallText{
     font-size: $smallText;  
+    @media screen and (min-width: 35em) {
+        font-size: $smallText + .5rem;
+    }
 }
 
 .background-display-text{
-    font-size: $background-display-text;  
+    font-size: $background-display-text;
 }
