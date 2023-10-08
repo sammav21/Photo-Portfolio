@@ -2,12 +2,21 @@
 
 .about-Picture{
     width: 90%;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+      }
 }
 .aboutText-Wrapper{
     width: 100%;
-    margin-bottom: 5rem;
     p{
         text-align:center;
+    }
+    @media screen and (min-width: 768px) {
+        margin: 0;
+        padding: 0 2rem;
+        p{
+            text-align:left;
+        }
     }
     // padding: 2rem;
  }

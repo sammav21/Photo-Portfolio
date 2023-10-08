@@ -6,18 +6,26 @@
     top: 0%;
     z-index: -1;
     line-height: 1;
-  @media screen and (min-width: 48em) {
-    position: fixed;
-    //position the word towards bottom
+    @media (min-width: 768px) {
+      position: fixed;
+      top: 20%;
+    }
   }
-  }
+
 .photo{
   width: 100%;
+  height: auto;
   margin: 0 0  2rem;
-  @media screen and (min-width: 48em) {
-  width: 55%;
-   margin: 0 0  1rem;
+  @media screen and (min-width: 768px) {
+  width: 51%;
+  //or width 50%ish and height auto?
+  margin: 0 0  1rem;
   }
+  @media screen and (min-width: 1024px) {
+    width: 55%;
+    //or width 50%ish and height auto?
+    margin: 0 0  1rem;
+    }
 }
 .left{
   align-self: flex-start;
@@ -25,3 +33,5 @@
 .right{
   align-self: flex-end;
 }
+
+
