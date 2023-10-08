@@ -3,7 +3,7 @@
 .about-Picture{
     width: 90%;
     @media screen and (min-width: 768px) {
-        width: 50%;
+        width: 32%;
       }
 }
 .aboutText-Wrapper{
@@ -12,6 +12,7 @@
         text-align:center;
     }
     @media screen and (min-width: 768px) {
+        width: 50%;
         margin: 0;
         padding: 0 2rem;
         p{
