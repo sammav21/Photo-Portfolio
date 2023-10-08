@@ -1,7 +1,7 @@
-$home-display-text: 3.25rem;
-$background-display-text: 45vw;
-$primary-heading: 2rem;
-$secondary-heading: 1.5rem;
+$home-display-text: 2.5rem;
+$background-display-text: 46vw;
+$primary-heading: 1.5rem;
+$secondary-heading: 1rem;
 $smallText: 1rem;
 
 .link, a{
@@ -10,38 +10,68 @@ $smallText: 1rem;
 
 .home-display-text{
     font-size: $home-display-text;
-    letter-spacing: 0.25rem;
-    @media screen and (min-width: 35em) {
+    letter-spacing: 0.1rem;
+    @media screen and (min-width: 560px) {
         font-size: $home-display-text + 1rem;
     }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 768px) {
+        font-size: $home-display-text + 1.75rem;
+    }
+    @media screen and (min-width: 1024px) {
         font-size: $home-display-text + 2rem;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: $home-display-text + 6rem;
+    }
+    @media screen and (min-width: 2560px) {
+        font-size: $home-display-text + 9rem;
     }
 }
 
 .primary-Heading{
     font-size: $primary-heading;
-    @media screen and (min-width: 35em) {
+    @media screen and (min-width: 560px) {
+        font-size: $primary-heading + .25rem;
+    }
+    @media screen and (min-width: 768px) {
         font-size: $primary-heading + .75rem;
     }
-    @media screen and (min-width: 48em) {
-        font-size: $primary-heading + 1.25rem;
+    @media screen and (min-width: 1024px) {
+        font-size: $primary-heading + .85rem;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: $primary-heading + 2.5rem;
+    }
+    @media screen and (min-width: 2560px) {
+        font-size: $primary-heading + 3.5rem;
     }
 }
 .secondary-Heading{
     font-size: $secondary-heading;  
-    @media screen and (min-width: 35em) {
-        font-size: $secondary-heading + .5rem;
+    @media screen and (min-width: 560px) {
+        font-size: $secondary-heading + .25rem;
     }
-    @media screen and (min-width: 48em) {
-        font-size: $secondary-heading + .75rem;
+    @media screen and (min-width: 768px) {
+        font-size: $secondary-heading + .65rem;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: $secondary-heading + 1.5rem;
+    }
+    @media screen and (min-width: 2560px) {
+        font-size: $secondary-heading + 2.5rem;
     }
 }
 
 .smallText{
     font-size: $smallText;  
-    @media screen and (min-width: 35em) {
+    @media screen and (min-width: 768px) {
+        font-size: $smallText + .25rem;
+    }
+    @media screen and (min-width: 1920px) {
         font-size: $smallText + .5rem;
+    }
+    @media screen and (min-width: 2560px) {
+        font-size: $smallText + 1.5rem;
     }
 }
 

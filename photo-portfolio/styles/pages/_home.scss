@@ -14,7 +14,13 @@
  .menuVisible{
     display: flex;
     position: absolute;
-    bottom: 30%;
+    bottom: 35%;
+    @media screen and (min-width: 1024px){
+        bottom: 28%;
+    }
+    @media screen and (min-width: 1920px){
+        bottom: 25%;
+    }
  }
 
  .btn-Home:hover{
@@ -24,5 +30,14 @@
         transition: .5s;
         font-size: calc(index.$secondary-heading + .75rem);
         color: index.$secondary-text-color;
+        @media screen and (min-width: 768px){
+            font-size: calc(index.$secondary-heading + 1.15rem);
+        }
+        @media screen and (min-width: 1920px){
+            font-size: calc(index.$secondary-heading + 1.75rem);
+        }
+        @media screen and (min-width: 2560px){
+            font-size: calc(index.$secondary-heading + 2.75rem);
+        }
     } 
   }
