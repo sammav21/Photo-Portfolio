@@ -20,7 +20,7 @@ export default function Home() {
         <Image src={HOMEPIC} alt="pink sky with clouds" style={{width:'100%', height: '100%', objectFit: 'cover', 
       zIndex: '-1', position: 'absolute'}}/>
         <h1 className='home-display-text' style={bebas_neue.style}>Samuel Avilés</h1>
-        <div className="homeButtons-Wrapper flex-row-center">
+        <div className="homeButtons-Wrapper flex-center">
             <button className="link-Home btn-Margin-Horizontal" onClick={() => setMenuVisible(!menuVisible)}>
               <p className='primary-Heading' style={bebas_neue.style}>Work</p>
             </button>

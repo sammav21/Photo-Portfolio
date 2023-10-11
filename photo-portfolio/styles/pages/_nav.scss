@@ -1,0 +1,106 @@
+@use '../base/index';
+
+nav{
+    h3, span{
+        color: index.$primary-text-color;
+    }
+}
+.webMenu-Container{
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+      }
+ }
+.mobileMenu-Icon{
+    transition: all 2s ease;
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+ }
+ #mobileMenu-X{
+    position: fixed;
+    z-index: 1;
+    color: index.$secondary-text-color;
+    right: 6%;
+    top: 2%;
+ }
+
+ .mobileMenu-Container{
+    align-items: center;
+    background-color: index.$secondary-background-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+    height: 0%;
+    p{
+        color: index.$secondary-text-color;
+    }
+    .navBtn{
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;     
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+ }
+ 
+ #mobileMenu-Open{
+    height: 100%;
+        .navBtn{
+            opacity: 1;
+            visibility: visible;
+        }
+ }
+
+.mobileMenu-Content{
+    position: absolute;
+    top: 30%;
+}
+
+.linkDropDown-Container{
+    transition: all .5s ease;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    p{
+        padding:1rem;
+    }
+    @media screen and (min-width: 768px){
+        position: absolute;
+        top: 120%;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        background-color:#f2f3f4b3;
+    }
+ }
+#linkDropDown-Open{
+    height: 15rem;
+    opacity: 1;
+}
+.dropMenu-Wrapper{
+    @media screen and (min-width: 1440px) {
+        margin-right: 2rem;
+    }
+    @media screen and (min-width: 1920px) {
+        margin-right: 3rem;
+    }
+ }
+.dropBtn:hover{
+   box-shadow: 0rem 0.25rem #778DA9;
+   transition: .5s;
+   p{
+    transition: .5s;
+    font-size: calc(index.$smallText + 2.5px);
+    @media screen and (min-width: 768px){
+        font-size: calc(index.$smallText + .45rem);
+    }
+    @media screen and (min-width: 1920px){
+        font-size: calc(index.$smallText + 1rem);
+    }
+    @media screen and (min-width: 2560px){
+        font-size: calc(index.$smallText + 2rem);
+    }
+   }
+}

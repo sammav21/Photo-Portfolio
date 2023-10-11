@@ -3,6 +3,8 @@ $background-display-text: 46vw;
 $primary-heading: 1.5rem;
 $secondary-heading: 1rem;
 $smallText: 1rem;
+$mobile-dropdown-primary: 5rem;
+$mobile-dropdown-secondary: 2.5rem;
 
 .link, a{
     text-decoration: none;
@@ -77,4 +79,11 @@ $smallText: 1rem;
 
 .background-display-text{
     font-size: $background-display-text;
+}
+
+.mobile-dropdown-primary{
+    font-size: $mobile-dropdown-primary;
+}
+.mobile-dropdown-secondary{
+    font-size: $mobile-dropdown-secondary;
 }

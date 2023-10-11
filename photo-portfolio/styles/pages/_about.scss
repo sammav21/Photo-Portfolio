@@ -21,12 +21,14 @@
     }
     // padding: 2rem;
  }
-
-span{
-    line-height: 2rem;
-    background-color: index.$primary-background-color;
-    box-shadow: .25rem 0.25rem  index.$secondary-background-color;
+.bio{
+    span{
+        line-height: 2rem;
+        background-color: index.$primary-background-color;
+        box-shadow: .25rem 0.25rem  index.$secondary-background-color;
+    }
 }
+
 
 .actionCall{
     span{

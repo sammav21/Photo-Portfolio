@@ -1,7 +1,7 @@
 $gutter: 1.25rem;
 $btn-Margin-Horizontal: 0 1rem;
 $btn-Margin-Vertical: .25rem 0rem;
-$btn-Padding-Rectangle: .5rem 1rem;
+$btn-Padding-Rectangle: .5rem 1rem ;
 
 *{
   margin:0;
@@ -29,7 +29,7 @@ main{
   display: flex;
   flex-direction: column;
 }
-.flex-row-center{
+.flex-center{
   display: flex;
   justify-content: center;
   align-items: center;
