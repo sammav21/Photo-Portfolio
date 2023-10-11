@@ -12,7 +12,7 @@
         text-align:center;
     }
     @media screen and (min-width: 768px) {
-        width: 50%;
+        width: 45%;
         margin: 0;
         padding: 0 2rem;
         p{
@@ -28,11 +28,10 @@
         box-shadow: .25rem 0.25rem  index.$secondary-background-color;
     }
 }
-
-
 .actionCall{
     span{
         box-shadow: .25rem 0.25rem  index.$accent-color;
+        background-color: index.$primary-background-color;
         a{
             color: index.$accent-color;
         }

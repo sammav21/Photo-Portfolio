@@ -1,15 +1,15 @@
 $gutter: 1.25rem;
 $btn-Margin-Horizontal: 0 1rem;
 $btn-Margin-Vertical: .25rem 0rem;
-$btn-Padding-Rectangle: .5rem 1rem ;
+$btn-Padding-Rectangle: 0.5rem 1rem 0;
 
 *{
   margin:0;
   padding: 0;
 }
-main{
-  overflow-x: hidden;
-}
+// main{
+//   overflow-x: hidden;
+// }
 .w100{
   width: 100%;
 }

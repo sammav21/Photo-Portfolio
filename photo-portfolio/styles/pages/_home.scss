@@ -28,7 +28,7 @@
     box-shadow: 0rem 0.25rem index.$accent-color;
     p{
         transition: .5s;
-        font-size: calc(index.$secondary-heading + .75rem);
+        font-size: calc(index.$secondary-heading + .5rem);
         color: index.$secondary-text-color;
         @media screen and (min-width: 768px){
             font-size: calc(index.$secondary-heading + 1.15rem);

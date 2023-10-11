@@ -15,12 +15,13 @@
     }
 
  ::-webkit-scrollbar{
-     width: .75rem;
+     width: .5rem;
+     
  }
  
  ::-webkit-scrollbar-thumb{
-     background: index.$secondary-background-color;
-     border-radius: 10px;
+     background: index.$accent-color;
+     
  }
 
  button{

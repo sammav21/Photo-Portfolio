@@ -2,15 +2,14 @@
 
 nav{
     h3, span{
+        transition: .5s;
         color: index.$primary-text-color;
     }
+    :hover{
+        color: index.$accent-color;
+    }
 }
-.webMenu-Container{
-    display: none;
-    @media screen and (min-width: 768px) {
-        display: flex;
-      }
- }
+//mobile
 .mobileMenu-Icon{
     transition: all 2s ease;
     @media screen and (min-width: 768px) {
@@ -23,18 +22,26 @@ nav{
     color: index.$secondary-text-color;
     right: 6%;
     top: 2%;
+    :hover{
+        transition: .25s;
+        color: index.$primary-text-color;
+    }
  }
-
  .mobileMenu-Container{
     align-items: center;
-    background-color: index.$secondary-background-color;
+    background-color: index.$accent-color;
     position: fixed;
     bottom: 0;
     left: 0;
     transition: all .5s ease-in-out;
     height: 0%;
     p{
+        transition: .25s;
         color: index.$secondary-text-color;
+    }
+    p:hover{
+        transition: .25s;
+        color: index.$primary-text-color;
     }
     .navBtn{
         transition: all .5s ease-in-out;
@@ -45,13 +52,12 @@ nav{
         display: none;
     }
  }
- 
  #mobileMenu-Open{
     height: 100%;
-        .navBtn{
-            opacity: 1;
-            visibility: visible;
-        }
+    .navBtn{
+        opacity: 1;
+        visibility: visible;
+    }
  }
 
 .mobileMenu-Content{
@@ -59,7 +65,7 @@ nav{
     top: 30%;
 }
 
-.linkDropDown-Container{
+.mobile-LinkDropDown-Container{
     transition: all .5s ease;
     height: 0;
     opacity: 0;
@@ -67,19 +73,30 @@ nav{
     p{
         padding:1rem;
     }
-    @media screen and (min-width: 768px){
-        position: absolute;
-        top: 120%;
-        z-index: 1;
-        backdrop-filter: blur(10px);
-        background-color:#f2f3f4b3;
-    }
  }
-#linkDropDown-Open{
+#mobile-LinkDropDown-Open{
     height: 15rem;
     opacity: 1;
 }
-.dropMenu-Wrapper{
+
+.mobile-dropBtn:hover{
+    box-shadow: 0rem 0.1rem index.$primary-text-color;
+    transition: .5s;
+    p{
+     transition: .5s;
+     font-size: calc(index.$mobile-dropdown-secondary + .25rem);
+    }
+ }
+//web
+.webMenu-Container{
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+      }
+ }
+
+ .web-Work-Container{
+    position: relative;
     @media screen and (min-width: 1440px) {
         margin-right: 2rem;
     }
@@ -87,20 +104,39 @@ nav{
         margin-right: 3rem;
     }
  }
-.dropBtn:hover{
-   box-shadow: 0rem 0.25rem #778DA9;
-   transition: .5s;
-   p{
-    transition: .5s;
-    font-size: calc(index.$smallText + 2.5px);
+ .web-LinkDropDown-Container{
     @media screen and (min-width: 768px){
-        font-size: calc(index.$smallText + .45rem);
+        width: fit-content;
+        position: absolute;
+        align-items: center;
+        top: 100%;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        background-color:#f2f3f4b3;
+        opacity: 0;
+        visibility: hidden;
+        transition: height .5s ease;
     }
-    @media screen and (min-width: 1920px){
-        font-size: calc(index.$smallText + 1rem);
+ }
+ #web-LinkDropDown-Open{
+    transition: opacity 1s ease;
+    opacity: 1;
+    visibility: visible;
+ }
+
+ .dropBtn:hover{
+    box-shadow: 0rem 0.1rem #778DA9;
+    transition: .5s;
+    p{
+     transition: .5s;
+     @media screen and (min-width: 768px){
+         font-size: calc(index.$small-text + .45rem);
+     }
+     @media screen and (min-width: 1920px){
+         font-size: calc(index.$small-text + 1rem);
+     }
+     @media screen and (min-width: 2560px){
+         font-size: calc(index.$small-text + 2rem);
+     }
     }
-    @media screen and (min-width: 2560px){
-        font-size: calc(index.$smallText + 2rem);
-    }
-   }
-}
+ }
