@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import {Bebas_Neue, Roboto_Condensed} from 'next/font/google';
 import { useState, useEffect } from "react";
 import Hamburger from "hamburger-react";
+
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],
   weight: '400'
@@ -45,10 +46,11 @@ export default function Nav() {
               <button className="navBtn" style={bebas_neue.style} onClick={() => setDropDownVisible(!dropDownVisible)}>
                 <p className='secondary-Heading'>Work</p>
               </button>
-              <div className='web-LinkDropDown-Container w100 flex-col' id={dropDownVisible ? 'web-LinkDropDown-Open' : undefined} style={roboto_condensed.style}>
-                  <Link className="dropBtn btn-Padding-Rectangle" href='/main/street'><p className="small-text">Street</p></Link>
-                  <Link className="dropBtn btn-Padding-Rectangle" href='/main/portraits'><p className="small-text">People</p></Link>
-                  <Link className="dropBtn btn-Padding-Rectangle" href='/main/places'><p className="small-text">Places</p></Link>
+              <div className='web-LinkDropDown-Container w100 flex' id={dropDownVisible ? 'web-LinkDropDown-Open' : undefined} style={roboto_condensed.style}>
+                  <Link className="dropBtn dropBtn-Margin-Rectangle" href='/main/street'><p className="small-text">Street</p></Link>
+                  <Link className="dropBtn dropBtn-Margin-Rectangle" href='/main/people'><p className="small-text">People</p></Link>
+                  <Link className="dropBtn dropBtn-Margin-Rectangle" href='/main/places'><p className="small-text">Places</p></Link>
+                  <Link className="dropBtn dropBtn-Margin-Rectangle" href='/main/series'><p className="small-text">Series</p></Link>
               </div>
             </div>
             <Link href='/main/about' className="navBtn"><p className='secondary-Heading'>About</p></Link>
@@ -62,8 +64,9 @@ export default function Nav() {
               </button>
               <div className="w100 flex-col-center mobile-LinkDropDown-Container" id={dropDownVisible ? 'mobile-LinkDropDown-Open' : undefined} style={roboto_condensed.style}>
                   <Link className="mobile-dropBtn btn-Margin-Vertical" href='/main/street'><p className="mobile-dropdown-secondary">Street</p></Link>
-                  <Link className="mobile-dropBtn btn-Margin-Vertical" href='/main/portraits'><p className="mobile-dropdown-secondary">People</p></Link>
+                  <Link className="mobile-dropBtn btn-Margin-Vertical" href='/main/people'><p className="mobile-dropdown-secondary">People</p></Link>
                   <Link className="mobile-dropBtn btn-Margin-Vertical" href='/main/places'><p className="mobile-dropdown-secondary">Places</p></Link>
+                  <Link className="mobile-dropBtn btn-Margin-Vertical" href='/main/series'><p className="mobile-dropdown-secondary">Series</p></Link>
               </div>
             </div>
             <Link href='/main/about' className="navBtn"><p className='mobile-dropdown-primary'>About</p></Link>
