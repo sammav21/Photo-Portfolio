@@ -17,7 +17,7 @@ export default function About() {
         <Image className='about-Picture' src={aboutPic} style={{ height: 'auto', boxShadow: '0rem 0.5rem 1rem #28282b5e'}}/>
         <div className="aboutText-Wrapper flex-col" style={roboto_condensed.style}>
           <div className='bio secondary-Heading'>
-            <p><span>Samuel Avilés is a photographer born, raised, and based in the Bronx.</span> <span>Shooting since 2012, he documents life as he experiences it with a focus on people and journalism.</span><br/><span>And that's about it really.</span><br/><br/></p>
+            <p><span>Samuel Avilés is a photographer born, raised, and based in the Bronx.</span> <span>Shooting since 2012, his journey has led him from newsrooms to wedding venues and everywhere in between. He documents life as he experiences it with a focus on people and journalism.</span><br/><span>And that's about it really.</span><br/><br/></p>
           </div>
           <div className='actionCall'>
             <p className='secondary-Heading'><span>for business inquiries please email S.Aviles0621@gmail.com</span></p><p className='secondary-Heading'><span>or message me on <a href="https://www.instagram.com/saviles621/">instagram</a></span></p>

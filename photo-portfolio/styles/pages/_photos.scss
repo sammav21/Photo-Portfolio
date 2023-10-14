@@ -11,21 +11,27 @@
       top: 20%;
     }
   }
-
+.photo-content{
+  @media screen and (min-width: 1024px) {
+  width: 80%;
+  }
+}
 .photo{
   width: 100%;
   height: auto;
   margin: 0 0  2rem;
+}
+#portrait{
   @media screen and (min-width: 768px) {
-  width: 51%;
-  //or width 50%ish and height auto?
-  margin: 0 0  1rem;
+    width: auto;
+    height: 95vh;
   }
-  @media screen and (min-width: 1024px) {
-    width: 55%;
-    //or width 50%ish and height auto?
-    margin: 0 0  1rem;
-    }
+}
+#landscape{
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 }
 .left{
   align-self: flex-start;

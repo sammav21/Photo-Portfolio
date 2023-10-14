@@ -1,6 +1,7 @@
 import {Bebas_Neue} from 'next/font/google';
 import STREET from '@public/assets/Street';
 import PhotoDisplay from '@components/PhotoDisplay';
+import Image from 'next/image';
 
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],

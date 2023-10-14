@@ -1,11 +1,14 @@
 @use '../base/index';
 
-.home-display-text{
-    color: index.$secondary-text-color; 
+.home-Wrapper{
+    h1, p{
+        color: index.$secondary-text-color; 
+    }
 }
 
+
 .link-Home:hover{
-    p{color: index.$secondary-text-color;}
+    p{color: index.$primary-text-color;}
  }
 
 .menuHidden{
@@ -29,7 +32,7 @@
     p{
         transition: .5s;
         font-size: calc(index.$secondary-heading + .5rem);
-        color: index.$secondary-text-color;
+        
         @media screen and (min-width: 768px){
             font-size: calc(index.$secondary-heading + 1.15rem);
         }

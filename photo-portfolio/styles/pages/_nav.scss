@@ -18,7 +18,7 @@ nav{
  }
  #mobileMenu-X{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     color: index.$secondary-text-color;
     right: 6%;
     top: 2%;
@@ -28,6 +28,7 @@ nav{
     }
  }
  .mobileMenu-Container{
+    z-index: 1;
     align-items: center;
     background-color: index.$accent-color;
     position: fixed;
@@ -62,6 +63,7 @@ nav{
 
 .mobileMenu-Content{
     position: absolute;
+    height: 15rem;
     top: 30%;
 }
 
@@ -71,11 +73,11 @@ nav{
     opacity: 0;
     overflow: hidden;
     p{
-        padding:1rem;
+        padding:.5rem;
     }
  }
 #mobile-LinkDropDown-Open{
-    height: 15rem;
+    height: 16rem;
     opacity: 1;
 }
 
@@ -110,6 +112,7 @@ nav{
         position: absolute;
         align-items: center;
         top: 100%;
+        right: 0;
         z-index: 1;
         backdrop-filter: blur(10px);
         background-color:#f2f3f4b3;

@@ -2,6 +2,7 @@ $gutter: 1.25rem;
 $btn-Margin-Horizontal: 0 1rem;
 $btn-Margin-Vertical: .25rem 0rem;
 $btn-Padding-Rectangle: 0.5rem 1rem 0;
+$dropBtn-Margin-Rectangle: 0.5rem 0rem 0 1rem;
 
 *{
   margin:0;
@@ -62,6 +63,9 @@ $btn-Padding-Rectangle: 0.5rem 1rem 0;
 }
 .btn-Padding-Rectangle{
   padding: $btn-Padding-Rectangle;
+}
+.dropBtn-Margin-Rectangle{
+  margin: $dropBtn-Margin-Rectangle;
 }
 /*nav*/
 nav{

@@ -4,44 +4,56 @@
 *{
   box-sizing:border-box;
  }
- html{
-     scroll-behavior: smooth;
- }
- body{
+html{
+    scroll-behavior: smooth;
+}
+body{
     background-color: index.$primary-background-color;
 }
-    p, h3{
-        color: index.$primary-text-color;
-    }
+p, h3{
+    color: index.$primary-text-color;
+}
 
- ::-webkit-scrollbar{
-     width: .5rem;
-     
- }
+::-webkit-scrollbar{
+    width: .5rem;
+}
  
- ::-webkit-scrollbar-thumb{
-     background: index.$accent-color;
+::-webkit-scrollbar-thumb{
+    background: index.$accent-color;
      
- }
+}
 
- button{
+button{
     border: none;
     background: none;
     cursor: pointer;
- } 
+} 
  
- /*Nav*/ 
+.toTop-Btn{
+    position: fixed;
+    bottom: -10%;
+    right: -3%;
+    border-radius: 50px;
+    background-color: index.$secondary-background-color;
+    transition: all 1s ease;
+    width: 3rem;
+    height: 4rem;
+    scale: 0;
+    span{
+        line-height: 0;
+        color: index.$secondary-text-color;
+    }   
+}
+.toTop-Btn:hover{
+    background-color: index.$accent-color;
+    span{
+        color: index.$primary-text-color;
+    }
+}
 
- 
-
-//  #arrow{
-//      font-size: 10px;
-//      position: fixed;
-//      bottom: 2%;
-//      left: 97.7%;
-//      cursor: pointer;
-//      padding: .6%;
-//      background-color: #28282B;
-//      border-radius: 20px;
-//      color: #f2f3f4;
-//  }
+#toTop-Visible{
+    transition: all 1s ease;
+    bottom: 3%;
+    right: 2%;
+    scale: 1;
+}
