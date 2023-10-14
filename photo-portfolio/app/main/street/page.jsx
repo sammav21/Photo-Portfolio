@@ -10,18 +10,9 @@ const bebas_neue = Bebas_Neue({
 
 export default function Street() {
   const images = Object.values(STREET);
-  let displayedImage = '';
-  const highlightImage = (url) => {
-    if(displayedImage == url){
-      return displayedImage = '';
-    } else{
-      return displayedImage = url;
-    }
-  }
   return (
     <div className="photos-Wrapper flex-col-center" >
       <h1 className='page-Title  background-display-text'  style={bebas_neue.style}>STREET</h1>
-      {displayedImage != '' && <Image src={displayedImage}/>}
       <PhotoDisplay images={images}/>
     </div>
   )
