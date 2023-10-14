@@ -29,6 +29,7 @@ export default function Nav() {
       setMobileMenuOpen(false)
     }
   }
+  
   useEffect(() => {
     closeMenus();
   }, [pathname]);
