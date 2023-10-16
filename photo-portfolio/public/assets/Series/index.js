@@ -1,0 +1,27 @@
+const SERIES ={
+    callan0: require('./Callan0.jpg'),
+    callan1: require('./Callan1.jpg'),
+    callan2: require('./Callan2.jpg'),
+    callan3: require('./Callan3.jpg'),
+    callan4: require('./Callan4.jpg'),
+    callan5: require('./Callan5.jpg'),
+    callan6: require('./Callan6.jpg'),
+    callan7: require('./Callan7.jpg'),
+    callan8: require('./Callan8.jpg'),
+    nyc1: require('./NYC1.jpg'),
+    nyc2: require('./NYC2.jpg'),
+    nyc3: require('./NYC3.jpg'),
+    nyc4: require('./NYC4.jpg'),
+    nyc5: require('./NYC5.jpg'),
+    nyc6: require('./NYC6.jpg'),
+    ru0: require('./RU0.jpg'),
+    ru1: require('./RU1.jpg'),
+    ru2: require('./RU3.jpg'),
+    ru3: require('./RU4.jpg'),
+    ru4: require('./RU5.jpg'),
+    ru5: require('./RU6.jpg'),
+    ru6: require('./RU7.jpg'),
+    ru7: require('./RU8.jpg'),
+    ru8: require('./RU9.jpg')
+}
+export default SERIES;
