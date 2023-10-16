@@ -1,7 +1,12 @@
 @use '../base/index';
 
-.home-Wrapper{
-    height: 100vh;
+
+.home-Text-Wrapper{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    align-items: center;
     h1, p{
         color: index.$secondary-text-color; 
     }
@@ -11,19 +16,16 @@
     p{color: index.$primary-text-color;}
  }
 
-.menuHidden{
-    display: none;
+
+.homeMenu{
+    transition: .5s;
+    margin-top: 1rem;
+    opacity: 0;
+    visibility: hidden;
 }
-.menuVisible{
-    display: flex;
-    position: absolute;
-    bottom: 35%;
-    @media screen and (min-width: 1024px){
-        bottom: 28%;
-    }
-    @media screen and (min-width: 1920px){
-        bottom: 25%;
-    }
+#menuVisible{
+    opacity: 1;
+    visibility: visible;
 }
 
 .btn-Home:hover{
@@ -31,10 +33,10 @@
     box-shadow: 0rem 0.25rem index.$accent-color;
     p{
         transition: .5s;
-        font-size: calc(index.$secondary-heading + .5rem);
+        font-size: calc(index.$secondary-heading + .15rem);
         
         @media screen and (min-width: 768px){
-            font-size: calc(index.$secondary-heading + 1.15rem);
+            font-size: calc(index.$secondary-heading + 1rem);
         }
         @media screen and (min-width: 1920px){
             font-size: calc(index.$secondary-heading + 1.75rem);
