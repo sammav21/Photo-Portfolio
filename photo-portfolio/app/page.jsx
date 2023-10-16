@@ -1,8 +1,8 @@
 'use client'
-import Image from 'next/image';
-import Link from 'next/link';
 import {Bebas_Neue, Roboto_Condensed} from 'next/font/google';
+import Image from 'next/image';
 import HOMEPIC from '@public/assets/Street/street19.jpg';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const bebas_neue = Bebas_Neue({

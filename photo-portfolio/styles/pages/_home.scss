@@ -1,11 +1,11 @@
 @use '../base/index';
 
 .home-Wrapper{
+    height: 100vh;
     h1, p{
         color: index.$secondary-text-color; 
     }
 }
-
 
 .link-Home:hover{
     p{color: index.$primary-text-color;}
@@ -13,8 +13,8 @@
 
 .menuHidden{
     display: none;
- }
- .menuVisible{
+}
+.menuVisible{
     display: flex;
     position: absolute;
     bottom: 35%;
@@ -24,9 +24,9 @@
     @media screen and (min-width: 1920px){
         bottom: 25%;
     }
- }
+}
 
- .btn-Home:hover{
+.btn-Home:hover{
     transition: 0.5s;
     box-shadow: 0rem 0.25rem index.$accent-color;
     p{
@@ -43,4 +43,4 @@
             font-size: calc(index.$secondary-heading + 2.75rem);
         }
     } 
-  }
+}

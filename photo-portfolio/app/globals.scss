@@ -13,22 +13,17 @@ body{
 p, h3{
     color: index.$primary-text-color;
 }
-
 ::-webkit-scrollbar{
     width: .5rem;
 }
- 
 ::-webkit-scrollbar-thumb{
-    background: index.$accent-color;
-     
+    background: index.$accent-color; 
 }
-
 button{
     border: none;
     background: none;
     cursor: pointer;
 } 
- 
 .toTop-Btn{
     position: fixed;
     bottom: -10%;

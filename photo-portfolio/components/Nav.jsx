@@ -1,9 +1,9 @@
 'use client'
+import {Bebas_Neue, Roboto_Condensed} from 'next/font/google';
+import Hamburger from "hamburger-react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import {Bebas_Neue, Roboto_Condensed} from 'next/font/google';
 import { useState, useEffect } from "react";
-import Hamburger from "hamburger-react";
 
 const bebas_neue = Bebas_Neue({
   subsets: ['latin'],
@@ -15,7 +15,6 @@ const roboto_condensed = Roboto_Condensed({
   weight: '300'
 });
 export default function Nav() {
-
   const [dropDownVisible, setDropDownVisible] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -41,7 +40,6 @@ export default function Nav() {
         <span className="mobileMenu-Icon" id={mobileMenuOpen ? 'mobileMenu-X' : undefined}>
             <Hamburger toggled={mobileMenuOpen} toggle={setMobileMenuOpen}/>
         </span>
-        
           <div className="webMenu-Container flex-center flex-responsive-direction">
             <div className="web-Work-Container flex-col-center btn-Margin-Horizontal">
               <button className="navBtn" style={bebas_neue.style} onClick={() => setDropDownVisible(!dropDownVisible)}>

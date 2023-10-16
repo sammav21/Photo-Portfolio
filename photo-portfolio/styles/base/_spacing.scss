@@ -8,9 +8,7 @@ $dropBtn-Margin-Rectangle: 0.5rem 0rem 0 1rem;
   margin:0;
   padding: 0;
 }
-// main{
-//   overflow-x: hidden;
-// }
+
 .w100{
   width: 100%;
 }
@@ -51,10 +49,7 @@ $dropBtn-Margin-Rectangle: 0.5rem 0rem 0 1rem;
   justify-content: center;
   align-items: center;
 }
-/*home*/
-.home-Wrapper{
-  height: 100vh;
-}
+
 .btn-Margin-Horizontal{
   margin: $btn-Margin-Horizontal;
 }
@@ -67,7 +62,6 @@ $dropBtn-Margin-Rectangle: 0.5rem 0rem 0 1rem;
 .dropBtn-Margin-Rectangle{
   margin: $dropBtn-Margin-Rectangle;
 }
-/*nav*/
 nav{
   padding: 1rem $gutter;
   @media screen and (min-width: 560px) {

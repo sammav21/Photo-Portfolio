@@ -9,9 +9,7 @@ export default function ScrollToTopButton() {
         const handleVisibility = () => {
             window.scrollY > 1000 ? setShowButton(true) : setShowButton(false);
         }
-
         window.addEventListener('scroll', handleVisibility)
-
         return() => {
             window.removeEventListener('scroll', handleVisibility)
         }
